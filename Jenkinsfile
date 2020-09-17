@@ -1,9 +1,6 @@
 pipeline {
   agent any
-  parameters {
-    password (name: 'AKIAZCNSO4VDBMDMHQN3')
-    password (name: 'i8Up1jhU+8IVx6Mf4CPUces+KptdpW/sSWYzR/hD')
-  }
+  
   environment {
     
     TF_IN_AUTOMATION = 'true'
