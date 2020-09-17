@@ -4,8 +4,8 @@ pipeline {
   environment {
     
     
-    AWS_ACCESS_KEY_ID = "g!GvRUtcX8R&"
-    AWS_SECRET_ACCESS_KEY = "AKIAZCNSO4VDGOTYUAVP"
+    AWS_ACCESS_KEY_ID = "AKIAZCNSO4VDGOTYUAVP"
+    AWS_SECRET_ACCESS_KEY = "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"
   }
   stages {
     stage('Terraform Init') {
