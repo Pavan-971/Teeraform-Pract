@@ -22,7 +22,7 @@ pipeline {
     stage('Terraform Apply') {
       steps {
         
-        sh "TF_LOG=DEBUG terraform apply -input=false tfplan" 
+        sh "terraform apply -input=false tfplan" 
       }
     }
     
