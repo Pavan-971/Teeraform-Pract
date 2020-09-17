@@ -1,3 +1,5 @@
+def awsCredentials = [[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-personal']]
+
 pipeline {
   agent any
   parameters {
