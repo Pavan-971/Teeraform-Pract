@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "my_terr_instance"
   }
-
+ key_name = "newkeypair"
  vpc_security_group_ids = ["sg-09031eb2d090dad80"]
  subnet_id = "subnet-03c91db4b89b0a488"
  associate_public_ip_address  = "true"
