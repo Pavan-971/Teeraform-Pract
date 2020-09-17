@@ -4,8 +4,8 @@ pipeline {
   environment {
     
     
-    AWS_ACCESS_KEY_ID = "AKIAZCNSO4VDGOTYUAVP"
-    AWS_SECRET_ACCESS_KEY = "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"
+    AWS_ACCESS_KEY_ID = "AKIAZCNSO4VDBMDMHQN3"
+    AWS_SECRET_ACCESS_KEY = "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"
   }
   stages {
     stage('Terraform Init') {
@@ -21,7 +21,7 @@ pipeline {
     stage('Terraform Apply') {
       steps {
         
-        sh "terraform apply -auto-approve "
+        sh "TF_LOG=DEBUG terraform apply -auto-approve "
       }
     }
     
