@@ -3,6 +3,10 @@ def awsCredentials = [[$class: 'AmazonWebServicesCredentialsBinding', credential
 pipeline {
   agent any
   
+  options {
+ 
+  withCredentials(awsCredentials)
+}
  
   stages {
     stage('Terraform Init') {
