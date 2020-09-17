@@ -9,6 +9,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "my_terr_instance"
   }
+ count = "2"
  key_name = "newkeypair"
  vpc_security_group_ids = ["sg-09031eb2d090dad80"]
  subnet_id = "subnet-03c91db4b89b0a488"
