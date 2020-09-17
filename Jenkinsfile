@@ -4,7 +4,7 @@ pipeline{
         stage("Getting code from repo")
         {
             steps{
-                sh 'pwd'
+                sh 'workspace = pwd()'
                 
                 sh'git clone https://github.com/Pavan-971/Teeraform-Pract.git'
                 
