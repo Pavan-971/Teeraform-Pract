@@ -1,6 +1,7 @@
 provider "aws" {
 region = "us-east-2"
-profile = "user4"
+shared_credentials_file = "credentials"
+ profile = "user4"
 }
 resource "aws_instance" "web" {
   ami           = "ami-0603cbe34fd08cb81"
