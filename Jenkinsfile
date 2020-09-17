@@ -15,13 +15,13 @@ pipeline {
     }
     stage('Terraform Plan') {
       steps {
-        sh "terraform plan "
+        sh "terraform plan out=tfplan -input=false "
       }
     }
     stage('Terraform Apply') {
       steps {
         
-        sh "TF_LOG=DEBUG terraform apply -auto-approve "
+        sh "TF_LOG=DEBUG terraform apply -input=false tfplan" "
       }
     }
     
